@@ -1,0 +1,354 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1400px;
+    height: 500px;
+}
+.title_resume {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.main_info {
+    display: flex;
+}
+.main_info_img {
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+}
+.title_resume_text {
+    text-align: center;
+    color: #fff;
+    background-color: #32303176; 
+    border-radius: 30px;
+    width: 100%;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+.title_resume_text_name {
+    font-size: 50px;
+    margin: 30px 0px;
+}
+.title_resume_text_position {
+    font-size: 30px;
+    display: inline-block;
+    background: -o-linear-gradient(right, #f1d335 0%, #db01ff 50%, #f1d335 100%);
+    background: linear-gradient(to left, #f1d335 0%, #db01ff 50%, #f1d335 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: animationGradient 5s linear infinite;
+    -webkit-animation: animationGradient 5s linear infinite;
+}
+@-webkit-keyframes animationGradient {
+    0% {
+      background-position: -100% 0%;
+    }
+    100% {
+      background-position:  100% 0%;
+    }
+  }
+  
+  @keyframes animationGradient {
+    0% {
+      background-position: -100% 0%;
+    }
+    100% {
+      background-position:  100% 0%;
+    }
+  }
+.information {
+    display: flex;
+    margin-top: 50px;
+}
+.contact {
+    width: 400px;
+    border-radius: 30px;
+    background-color: #32303176;
+    color: #fff;
+    padding: 50px;
+}
+.education {
+    background-color: #32303176; 
+    border-radius: 30px;
+    width: 100%;
+    margin-left: 50px;
+    color: #fff;
+    padding: 50px;
+}
+p.education {
+    font-size: 30px;
+}
+.contact_title {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    width: 300px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.card_work {
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgba(84, 84, 84, 0.642);
+    margin-bottom: 50px;
+}
+.card_header {
+    display: flex;
+    justify-content: space-between;
+}
+.card_body {
+    display: flex;
+}
+.mark {
+    margin: 0px 10px;
+}
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 30px;
+    background-color: #32303176;
+    color: #fff;
+    padding: 50px;
+    margin: 50px 0px;
+}
+.skills_info {
+    margin-right: 100px;
+}
+.work_experiense {
+    background-color: #32303176; 
+    border-radius: 30px;
+    color: #fff;
+    padding: 50px;
+}
+.dev_app {
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgba(84, 84, 84, 0.642);
+    height: 100%;
+    width: 65%;
+}
+
+
+.gradient {
+    /* height: 300px; */
+    width: 100%; 
+    background: linear-gradient(149deg, rgba(24,187,156,1) 0%, rgba(106,57,175,1) 42%, rgba(187,24,148,1) 72%, rgba(115,53,134,1) 100%);
+    animation: gradient 10s infinite linear; 
+    background-size: 400%; 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+/* .glow-on-hover {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+} */
+
+.glow-on-hover {
+    position: relative;
+    z-index: 0;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* .glow-on-hover:active {
+    color: #000
+} */
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.interpipe:hover {
+    background-color: #b1a200;
+}
+.smatrprovide:hover {
+    background-color: #1b0054;
+}
+.privatbank:hover {
+    background-color: #075400;
+}
+
+.swift:hover {
+    background-color: #9c4100;
+}
+.dev_app_card {
+    text-align: center;
+    font-size: 30px;
+}
+.dev_app_card_img {
+    border-radius: 30px;
+    width: 200px;
+}
+.dev_app_card_title {
+    margin: 0;
+}
+.dev_app_arr {
+    display: flex;
+    justify-content:space-around;
+}
+
+@media (max-width: 1450px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media (max-width: 1250px) {
+    .container {
+        width: 1000px;
+    }
+}
+@media (max-width: 1050px) {
+    .container {
+        width: 800px;
+    }
+    .main_info {
+        display: block;
+        text-align: center;
+    }
+    .title_resume_text {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .contact {
+        width: 200px;
+    }
+    .contact_title {
+        text-align: left;
+    }
+    .skills {
+        display: block;
+    }
+    .dev_app {
+        width: 90%;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 850px) {
+    .container {
+        width: 600px;
+    }
+    .information {
+        display: block;
+    }
+    .contact {
+        width: 83%;
+        margin-bottom: 50px;
+    }
+    .education {
+        margin-left: 0;
+        width: 83%;
+    }
+}
+@media (max-width: 650px) {
+    .container {
+        width: 400px;
+    }
+    .dev_app_arr {
+        display: block;
+    }
+    .dev_app {
+        width: 80%
+    }
+}
+@media (max-width: 450px) {
+    .container {
+        width: 350px;
+    }
+    .title_resume_text {
+        width: 100%;
+        padding-top: 5px;
+    }
+    .information {
+        width: 100%;
+    }
+    .work {
+        width: 100%;
+    }
+    .main_info {
+        width: 100%;
+    }
+    .main_info_img {
+        height: 350px;
+    }
+    .main_info_img {
+        width: 100%;
+    }
+    .contact {
+        width: 72%;
+    }
+    .education {
+        width: 72%;
+    }
+    .work_experiense {
+        padding: 10px 0px;
+    }
+    .contact_title {
+        margin-left: 15px;
+        width: 100%;
+    }
+}
+/* background-color: #32303176; 
+border-radius: 30px; */
+
